@@ -3,5 +3,15 @@
         "Produto": "Monster",
         "Preço": 9.9,
         "Quantidade": 25
+    },
+    {
+        "Produto": "RedBull",
+        "Preço": 10.9,
+        "Quantidade": 35
+    },
+    {
+        "Produto": "Bally",
+        "Preço": 7.0,
+        "Quantidade": 40
     }
 ]
