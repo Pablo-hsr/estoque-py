@@ -6,8 +6,11 @@ from dados import estoque, salvar
 
 def cadastro():
     produto = input('Digite o nome do produto a ser cadastrado: ')
+    print(f'{'='*39}')
     preco = float(input('Digite o preço do produto: '))
-    quantidade = int(input('Qual a quantidade: '))
+    print(f'{'='*39}')
+    quantidade = int(input('Digite a quantidade: '))
+    print(f'{'='*39}')
 
     for itens in estoque:
         if itens['Produto'] == produto:
@@ -23,9 +26,10 @@ def cadastro():
                         'Quantidade': quantidade
                         })
 
-        print('Produto Cadastrado.')
+        print('[Produto Cadastrado.]')
 
     salvar()
+
 
 
 def remover():
@@ -39,6 +43,7 @@ def remover():
             break
     else:
         print('Produto Não Encontrado.')
+
 
 
 def lista():
@@ -98,6 +103,8 @@ def separarPreco():
     listaSeparada.clear()
     separados.clear()
 
+
+
 def separarQuantidade():
 
     listaOrdenada = sorted(estoque, key=lambda item: item['Quantidade'])
@@ -110,3 +117,30 @@ def separarQuantidade():
     print('='*37)
 
     listaOrdenada.clear()
+
+
+def pesquisar():
+    pesquisa = (input('Digite o nome do produto que deseja buscar: ')).strip()
+    pesquisado = []
+    teste = 0
+
+    for i in range (len(estoque)):
+        if pesquisa == estoque[i]['Produto']:
+            pesquisado.append({
+                'Produto': estoque[i]['Produto'],
+                'Quantidade': estoque[i]['Quantidade'],
+                'Preço': estoque[i]['Preço']
+            })
+            print('='*37)
+            print(f'{'|Produto':.<19.19}|{'Qtd':.>8.8}|{'Preço|':.>8.8}')
+            print('='*37)
+            for item in pesquisado:
+                print(f"|{item['Produto']:.<18.18}|{item['Quantidade']:.>8}|{item['Preço']:.>7.2f}|")
+                print('='*37)
+
+            teste == 1
+
+    if teste == 0:
+        print('Produto não encontrado: Verifique a maneira que foi digitado.')
+
+

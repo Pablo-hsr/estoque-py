@@ -13,5 +13,30 @@
         "Produto": "Bally",
         "Preço": 7.0,
         "Quantidade": 40
+    },
+    {
+        "Produto": "Coca-Cola",
+        "Preço": 4.5,
+        "Quantidade": 50
+    },
+    {
+        "Produto": "Guaraná",
+        "Preço": 4.5,
+        "Quantidade": 30
+    },
+    {
+        "Produto": "Guaraná Jesus",
+        "Preço": 5.0,
+        "Quantidade": 56
+    },
+    {
+        "Produto": "Sprite",
+        "Preço": 12.5,
+        "Quantidade": 38
+    },
+    {
+        "Produto": "Toddynho",
+        "Preço": 3.5,
+        "Quantidade": 48
     }
 ]

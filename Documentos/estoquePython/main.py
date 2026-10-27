@@ -48,18 +48,32 @@ while func != 0:
                 enter = (input('[Aperte enter para voltar ao menu do estoque]'))
                 if enter == '':
                     menuEstoque = 'S'
+
+                    
             elif funcEstoque == 2:
                 print(f'{'='*39}')
                 menu_funções.separarPreco()
                 enter = (input('[Aperte enter para voltar ao menu do estoque]'))
                 if enter == '':
                     menuEstoque = 'S'
+
+
             elif funcEstoque == 3:
                 print(f'{'='*39}')
                 menu_funções.separarQuantidade()
                 enter = (input('[Aperte enter para voltar ao menu do estoque]'))
                 if enter == '':
                     menuEstoque = 'S'
+
+
+            elif funcEstoque == 4:
+                print(f'{'='*39}')
+                menu_funções.pesquisar()
+                enter = (input('[Aperte enter para voltar ao menu do estoque]'))
+                if enter == '':
+                    menuEstoque = 'S'
+
+
             elif funcEstoque == 0:
                 func = 9
                 menuEstoque = 'N'
